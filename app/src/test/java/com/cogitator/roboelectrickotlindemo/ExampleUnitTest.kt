@@ -45,14 +45,14 @@ class ExampleUnitTest {
         val showActivity: ShadowActivity = Shadows.shadowOf(firstActivity)
         val intent: Intent = showActivity.nextStartedActivity
         val shadowIntent: ShadowIntent = shadowOf(intent)
-        assertThat(shadowIntent.intentClass.name, equalTo(FirstActivity::class.java!!.getName()))
+        assertThat(shadowIntent.intentClass.name, equalTo(FirstActivity::class.java.name))
     }
 
     @Test
     fun checkTextViewString_presentOrNot() {
         val textView = firstActivity.findViewById<TextView>(R.id.textView)
         val stringValue = textView.text.toString()
-        assertThat(stringValue, equalTo("Hello World!"))
+        assertThat(stringValue, equalTo("Hello Android World!"))
     }
 
 }
