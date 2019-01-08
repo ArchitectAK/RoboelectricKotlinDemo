@@ -3,8 +3,7 @@ package com.cogitator.roboelectrickotlindemo
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.View
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_first.*
 
 /**
  * @author Ankit Kumar on 03/01/2019
